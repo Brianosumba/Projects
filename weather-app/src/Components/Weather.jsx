@@ -186,4 +186,4 @@ const Weather = () => {
   );
 };
 
-export default Weather; // Export the Weather component for use in other files
+export default Weather; // Export the Weather component for use in other files...
