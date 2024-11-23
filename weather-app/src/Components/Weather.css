@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6b8dfb, #91c8ff);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.weather-app {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.weather-app:hover {
+  transform: translateY(-10px);
+}
+
+/* Form Styles */
+.weather-app__form {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.weather-app__input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  font-size: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.weather-app__input:focus {
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.4);
+}
+
+.weather-app__button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background: #ff7b54;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.weather-app__button:hover {
+  background: #ff5722;
+  transform: scale(1.05);
+}
+
+/* Weather Info Styles */
+.weather-app__info {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.weather-app__heading {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.weather-app__temperature {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.weather-app_humidity,
+.weather-app_feelslike,
+.weather-app_pressure,
+.weather-app__wind {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: #dce7ff;
+}
+
+.weather-app__icon {
+  width: 100px;
+  height: 100px;
+  margin: 1rem 0;
+  animation: bounce 2s infinite;
+}
+
+.weather-app__description {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  text-transform: capitalize;
+}
+
+/* Loading and Error States */
+.loading,
+.error {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  color: #ffcccb;
+  animation: pulse 1.5s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .weather-app {
+    padding: 1.5rem;
+  }
+
+  .weather-app__heading {
+    font-size: 1.5rem;
+  }
+
+  .weather-app__temperature {
+    font-size: 2rem;
+  }
+
+  .weather-app__icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
