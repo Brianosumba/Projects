@@ -45,14 +45,13 @@ If the kitchen says, “Sorry, no such dish” (404 error), it apologizes to the
 
     4.  Handling User Input (handleInputChange and handleSubmit)
         These functions let the user type a city name and fetch weather data for it.
+        Key Points:
 
-              Key Points:
+handleInputChange keeps track of what the user is typing in searchInput.
+handleSubmit updates the city state when the user submits the form.
 
-        handleInputChange keeps track of what the user is typing in searchInput.
-        handleSubmit updates the city state when the user submits the form.
-
-        Analogy:
-        The customer writes down the city they want (types into the input). When they hit “Search,” the waiter (app) officially places the order (updates city).
+Analogy:
+The customer writes down the city they want (types into the input). When they hit “Search,” the waiter (app) officially places the order (updates city).
 
 4.  Rendering the UI
     This is where everything comes together. The app shows different things based on the current state.
