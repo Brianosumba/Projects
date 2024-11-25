@@ -1,0 +1,92 @@
+[
+  {
+    "question": "A flashing red traffic light signifies that a driver should do what?",
+    "options": [
+      "A: Stop",
+      "B: Speed up",
+      "C: Proceed with caution",
+      "D: Honk the horn"
+    ],
+    "answer": "A: Stop"
+  },
+  {
+    "question": "A knish is traditionally stuffed with what filling?",
+    "options": [
+      "A: Potato",
+      "B: Creamed corn",
+      "C: Lemon custard",
+      "D: Raspberry jelly"
+    ],
+
+    "answer": "A: Potato"
+  },
+  {
+    "question": "A pita is a type of what?",
+    "options": [
+      "A: Fresh fruit",
+      "B:Flat bread",
+      "C: French tart",
+      "D: Friend bean dip"
+    ],
+
+    "answer": "B: Fresh fruit"
+  },
+  {
+    "question": "A portrait that comically exaggerates a person's physical traits is called a what?",
+    "options": [
+      "A: Landscape",
+      "B: Caricature",
+      "C: Still life",
+      "D: Impressionism"
+    ],
+
+    "answer": "B: Caricature"
+  },
+  {
+    "question": "A second-year college student is usually called a what?",
+    "options": ["A: Sophomore", "B: Senior", "C: Freshman ", "D: Junior "],
+
+    "answer": "A: Sophomore"
+  },
+  {
+    "question": "A student who earns a J.D. can begin his or her career as a what?",
+    "options": ["A: Lawyer", "B: Bricklayer", "C: Doctor", "D: Accountant"],
+
+    "answer": "A: Lawyer"
+  },
+  {
+    "question": "A triptych is a work of art that is painted on how many panels?",
+    "options": ["A: Two", "B: Three", "C: Five", "D: Eight"],
+
+    "answer": "B: Three"
+  },
+  {
+    "question": "According to a famous line from the existentialist play 'No Exit' what is hell?",
+    "options": [
+      "A: Oneself",
+      "B: Other people",
+      "C: Little made large",
+      "D: Hued in green and blue"
+    ],
+
+    "answer": "B: Other people"
+  },
+  {
+    "question": "According to a popular slogan, what state should people not 'mess with'?",
+    "options": ["A: New York", "B: Texas", "C: Montana", "D: Rhode Island"],
+
+    "answer": "B: Texas"
+  },
+  {
+    "question": "According to a Yale University study, what smell is the most recognizable to American adults?",
+    "options": ["A: Tuna", "B: Laundry", "C: Popcorn", "D: Coffee"],
+
+    "answer": "D: Coffee"
+  },
+  {
+    "question": "According to folklore, the 'jackalope' is an antlered version of what animal?",
+    "options": ["A: Chicken", "B: Rabbit", "C: Moose", "D: Snake"],
+
+    "answer": "B: Rabbit"
+  }
+]
