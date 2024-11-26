@@ -1,0 +1,98 @@
+.reservation-form {
+  background: #f9f9f9; /* Light background for contrast */
+  padding: 80px 20px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.reservation-form h2 {
+  font-size: 2.5rem;
+  color: #ff7e5f; /* Matches hero button color */
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #ffffff; /* Form container background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form input,
+.reservation-form button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  border: 2px solid #ff7e5f;
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.reservation-form input::placeholder {
+  color: #aaa;
+}
+
+.reservation-form input:focus {
+  outline: none;
+  border-color: #feaf7b; /* Slightly lighter shade for focus */
+  box-shadow: 0 0 5px rgba(254, 175, 123, 0.5);
+}
+
+.reservation-form button {
+  background-color: #ff7e5f;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reservation-form button:hover {
+  background-color: #feaf7b;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.reservation-form button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .reservation-form {
+    padding: 60px 10px;
+  }
+
+  .reservation-form h2 {
+    font-size: 2rem;
+  }
+
+  .reservation-form form {
+    padding: 30px;
+  }
+
+  .reservation-form input,
+  .reservation-form button {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservation-form h2 {
+    font-size: 1.8rem;
+  }
+
+  .reservation-form input,
+  .reservation-form button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
