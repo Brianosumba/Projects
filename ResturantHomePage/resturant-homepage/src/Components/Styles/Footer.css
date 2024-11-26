@@ -1,0 +1,81 @@
+footer {
+  background: #333333; /* Dark background for contrast */
+  color: #ffffff; /* White text for readability */
+  text-align: center;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow at the top */
+  position: relative;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+footer p a {
+  color: #ff7e5f; /* Matches hero and other styles */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer p a:hover {
+  color: #feaf7b; /* Slightly lighter shade on hover */
+}
+
+.social-links {
+  margin: 20px 0; /* Increased spacing for better layout */
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Even spacing between social icons */
+}
+
+.social-links a {
+  color: #ff7e5f; /* Matches hero and other styles */
+  text-decoration: none;
+  font-size: 1.5rem; /* Larger font for visibility */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #feaf7b; /* Slightly lighter shade on hover */
+  transform: scale(1.2); /* Subtle zoom effect on hover */
+}
+
+.social-links a:active {
+  transform: scale(1); /* Reset zoom on click */
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+
+  .social-links {
+    gap: 15px; /* Adjust spacing for smaller screens */
+  }
+
+  .social-links a {
+    font-size: 1.3rem; /* Slightly smaller font for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+
+  .social-links {
+    flex-wrap: wrap; /* Wrap icons to the next line if needed */
+    gap: 10px; /* Reduced spacing for very small screens */
+  }
+
+  .social-links a {
+    font-size: 1.1rem; /* Smaller font size for mobile devices */
+  }
+}
