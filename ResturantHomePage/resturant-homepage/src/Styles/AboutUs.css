@@ -1,90 +1,100 @@
+/* Main About Us Section */
 .about-us {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 80px 20px;
-  background: #ffffff; /* Clean white background */
-  font-family: "Arial", sans-serif;
-  color: #333;
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center; /* Center the "About Us" title */
 }
 
 .about-us h2 {
   font-size: 2.5rem;
-  color: #ff7e5f; /* Matches hero button color */
-  margin-bottom: 10px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px; /* Add more spacing below the title */
+  color: #ff6347;
 }
 
-.about-us h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #333;
-  font-weight: bold;
+/* Container for Image and Content */
+.about-us-container {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+  justify-content: center;
+  gap: 30px; /* More space between image and text */
+  max-width: 1200px;
+  margin: 0 auto; /* Center horizontally */
 }
 
-.about-us p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  max-height: 120px; /* Limit height for Read More/Read Less */
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.about-us p.expanded {
-  max-height: 1000px; /* Expand height for full text */
-}
-
-.about-us .about-content {
-  flex: 1;
-}
-
-.about-us img {
-  width: 40%;
-  height: auto;
+/* Image Styling with 3D Animation */
+.about-us-image {
+  flex: 1; /* Take up 1 part of the container */
+  max-width: 350px; /* Explicitly resize the image */
+  height: auto; /* Maintain aspect ratio */
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  object-fit: cover; /* Prevent distortion */
+  transition: transform 0.6s ease, box-shadow 0.6s ease; /* Smooth animations */
 }
 
-.about-us img:hover {
-  transform: scale(1.05);
+.about-us-image:hover {
+  transform: rotateY(15deg) scale(1.05); /* Slight 3D rotation and scale */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Add depth with shadow */
 }
 
-.about-us button {
-  background-color: #ff7e5f;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
+/* Content Styling */
+.about-content {
+  flex: 2; /* Take up 2 parts of the container */
+  text-align: left;
+  margin-top: 30px; /* Place content slightly below the title */
+}
+
+.about-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.about-content p {
   font-size: 1rem;
-  border-radius: 30px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-height: 150px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.about-content p.expanded {
+  max-height: 1000px;
+}
+
+.about-content button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6347;
+  color: #fff;
+  border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-.about-us button:hover {
-  background-color: #feaf7b; /* Slightly lighter shade for hover */
-  transform: translateY(-3px);
+.about-content button:hover {
+  background-color: #e5533c;
 }
 
-.about-us button:active {
-  transform: translateY(0);
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-  .about-us {
-    flex-direction: column;
+  .about-us-container {
+    flex-direction: column; /* Stack image and content vertically */
     text-align: center;
   }
 
-  .about-us img {
-    width: 80%;
-    margin-bottom: 20px;
+  .about-us-image {
+    max-width: 80%; /* Resize for smaller screens */
   }
 
-  .about-us .about-content {
-    flex: unset;
+  .about-content {
+    text-align: center; /* Center text on smaller screens */
+    margin-top: 20px; /* Adjust margin for stacked layout */
+  }
+
+  .about-content h3,
+  .about-content p {
+    text-align: center;
   }
 }

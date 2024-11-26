@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div id="hero" className="hero">
       <h1>Welcome to Our Resturant</h1>
-      <p>Delicious food, exceptional service</p>
+      <p>Delicious food, Exceptional service</p>
       <button onClick={scrollToMenu}>Explore Our Menu</button>
     </div>
   );

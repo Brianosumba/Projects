@@ -1,91 +1,86 @@
+/* Reset body and global styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
 nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background: rgba(255, 255, 255, 0.9); /* Transparent white background */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  position: fixed;
+  justify-content: space-between; /* Space out logo and links */
+  align-items: center; /* Vertically center items */
+  padding: 10px 20px;
+  background-color: #333; /* Dark background */
+  color: #fff;
+  position: sticky;
   top: 0;
-  width: 100%;
+  width: 100%; /* Full width */
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Logo */
+.logo {
+  flex: 1; /* Pushes the links to the center */
 }
 
 .logo h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #ff7e5f; /* Matches hero button color */
-  font-family: "Arial", sans-serif;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  color: #ff6347;
+  margin: 0;
+  white-space: nowrap; /* Prevent breaking into multiple lines */
 }
 
+/* Links Container */
 ul {
-  display: flex;
   list-style: none;
-  gap: 30px; /* Even spacing between menu items */
+  display: flex;
+  justify-content: center; /* Center the links */
+  align-items: center; /* Vertically align links */
+  gap: 20px; /* Space between links */
+  margin: 0;
+  padding: 0;
+  flex: 2; /* Allows links to take up more space for centering */
 }
 
-ul li {
-  font-size: 1rem;
-  font-weight: bold;
-  font-family: "Arial", sans-serif;
-}
-
+/* Individual Links */
 ul li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 5px 10px; /* Add clickable padding */
   transition: color 0.3s ease, transform 0.3s ease;
-  position: relative;
 }
 
 ul li a:hover {
-  color: #ff7e5f; /* Matches hero button hover color */
-  transform: scale(1.1);
+  color: #ff6347; /* Highlight link on hover */
+  transform: translateY(-2px); /* Subtle hover lift */
 }
 
-ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background: #ff7e5f;
-  transition: width 0.3s ease;
-}
-
-ul li a:hover::after {
-  width: 100%; /* Underline effect on hover */
-}
-
+/* Responsive Navbar */
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column; /* Stack the logo and links vertically */
+    align-items: center; /* Center everything */
     padding: 10px 20px;
   }
 
   ul {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 15px;
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px;
+    width: 100%; /* Full width for the links */
   }
 
   ul li a {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  nav {
-    padding: 10px;
-  }
-
-  .logo h1 {
-    font-size: 1.5rem;
-  }
-
-  ul li a {
-    font-size: 0.8rem;
+    display: block;
+    text-align: center; /* Center align the links */
+    padding: 10px 0;
   }
 }

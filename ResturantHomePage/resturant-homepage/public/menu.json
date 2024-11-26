@@ -4,111 +4,127 @@
     "category": "breakfast",
     "image": "Images/Breakfast/Burrito.jpg",
     "name": "Breakfast Burrito",
-    "description": "A warm tortilla filled with scrambled eggs, sautéed vegetables, shredded cheese, and your choice of sausage or ham, served with salsa or hot sauce on the side."
+    "price": "$5.89",
+    "description": "A warm tortilla filled with scrambled eggs, saut\u00e9ed vegetables, shredded cheese, and your choice of sausage or ham, served with salsa or hot sauce on the side."
   },
   {
     "id": 2,
     "category": "breakfast",
     "image": "Images/Breakfast/frenchToast.jpg",
     "name": "French Toast with Cinnamon and Vanilla",
-    "description": "Thick slices of bread soaked in a mixture of eggs, milk, cinnamon, and vanilla, then pan-fried to golden perfection and topped with powdered sugar."
+    "description": "Thick slices of bread soaked in a mixture of eggs, milk, cinnamon, and vanilla, then pan-fried to golden perfection and topped with powdered sugar.",
+    "price": "$6.49"
   },
   {
     "id": 3,
     "category": "breakfast",
     "image": "Images/Breakfast/Omelette.jpg",
     "name": "Bacon and Cheese Omelette with Toast",
-    "description": "A classic omelette filled with crispy bacon bits and melted cheddar cheese, served alongside buttered whole-grain toast."
+    "description": "A classic omelette filled with crispy bacon bits and melted cheddar cheese, served alongside buttered whole-grain toast.",
+    "price": "$7.29"
   },
   {
     "id": 4,
     "category": "breakfast",
     "image": "Images/Breakfast/Pancake.jpg",
     "name": "Pancakes with Fresh Berries and Maple Syrup",
-    "description": "Fluffy pancakes served with a generous helping of fresh strawberries, blueberries, and a drizzle of pure maple syrup."
+    "description": "Fluffy pancakes served with a generous helping of fresh strawberries, blueberries, and a drizzle of pure maple syrup.",
+    "price": "$8.19"
   },
   {
     "id": 5,
     "category": "lunch",
     "image": "Images/Lunch/chickenwrap.jpg",
     "name": "Grilled Chicken Wrap with Avocado and Spinach",
-    "description": "A whole-grain tortilla filled with slices of grilled chicken breast, creamy avocado, fresh spinach, and tomato. Add a smear of hummus or a sprinkle of feta cheese for extra flavor. This wrap offers lean protein, healthy fats, and plenty of vitamins to keep you energized."
+    "description": "A whole-grain tortilla filled with slices of grilled chicken breast, creamy avocado, fresh spinach, and tomato. Add a smear of hummus or a sprinkle of feta cheese for extra flavor. This wrap offers lean protein, healthy fats, and plenty of vitamins to keep you energized.",
+    "price": "$9.99"
   },
   {
     "id": 6,
     "category": "lunch",
     "image": "Images/Lunch/quinoa.jpg",
     "name": "Quinoa and Roasted Vegetable Salad",
-    "description": "A nourishing salad featuring fluffy quinoa mixed with roasted vegetables like bell peppers, zucchini, and sweet potatoes. Tossed with fresh spinach, cherry tomatoes, and a light lemon vinaigrette, this dish is rich in fiber, protein, and essential nutrients."
+    "description": "A nourishing salad featuring fluffy quinoa mixed with roasted vegetables like bell peppers, zucchini, and sweet potatoes. Tossed with fresh spinach, cherry tomatoes, and a light lemon vinaigrette, this dish is rich in fiber, protein, and essential nutrients.",
+    "price": "$8.49"
   },
   {
     "id": 7,
     "category": "lunch",
     "image": "Images/Lunch/soup.jpg",
     "name": "Lentil Soup with Whole-Grain Bread",
-    "description": "A warm and hearty soup made with lentils simmered in vegetable broth alongside carrots, celery, onions, and diced tomatoes. Seasoned with herbs like thyme and cumin, it's a comforting meal that's high in fiber and plant-based protein. Serve with a slice of whole-grain bread."
+    "description": "A warm and hearty soup made with lentils simmered in vegetable broth alongside carrots, celery, onions, and diced tomatoes. Seasoned with herbs like thyme and cumin, it's a comforting meal that's high in fiber and plant-based protein. Serve with a slice of whole-grain bread.",
+    "price": "$7.89"
   },
   {
     "id": 8,
     "category": "lunch",
     "image": "Images/Lunch/sushibowl.jpg",
     "name": "Sushi Bowl with Brown Rice",
-    "description": "A deconstructed sushi bowl featuring a base of brown rice topped with sliced cucumbers, shredded carrots, edamame, avocado, and either grilled salmon or tofu. Drizzle with a light soy sauce or sesame dressing. This dish provides omega-3 fatty acids, vitamins, and minerals."
+    "description": "A deconstructed sushi bowl featuring a base of brown rice topped with sliced cucumbers, shredded carrots, edamame, avocado, and either grilled salmon or tofu. Drizzle with a light soy sauce or sesame dressing. This dish provides omega-3 fatty acids, vitamins, and minerals.",
+    "price": "12.99$"
   },
   {
     "id": 9,
     "category": "dinner",
     "image": "Images/Dinner/beefbroccoli.jpg",
     "name": "Beef Stir-Fry with Broccoli and Brown Rice",
-    "description": "Sauté lean strips of beef with fresh broccoli florets, carrots, and snap peas in a light ginger and garlic sauce. Serve over brown rice or quinoa for a balanced meal rich in protein and fiber."
+    "description": "Saut\u00e9 lean strips of beef with fresh broccoli florets, carrots, and snap peas in a light ginger and garlic sauce. Serve over brown rice or quinoa for a balanced meal rich in protein and fiber.",
+    "price": "$14.49"
   },
   {
     "id": 10,
     "category": "dinner",
     "image": "Images/Dinner/chickenkebab.jpg",
     "name": "Grilled Chicken and Vegetable Kebabs",
-    "description": "Skewer marinated chicken chunks with colorful vegetables like bell peppers, zucchini, onions, and cherry tomatoes. Grill until the chicken is cooked through and the veggies are tender. This dish is high in lean protein and packed with vitamins from the veggies."
+    "description": "Skewer marinated chicken chunks with colorful vegetables like bell peppers, zucchini, onions, and cherry tomatoes. Grill until the chicken is cooked through and the veggies are tender. This dish is high in lean protein and packed with vitamins from the veggies.",
+    "price": "$13.29"
   },
   {
     "id": 11,
     "category": "dinner",
     "image": "Images/Dinner/chickenparmesan.jpg",
     "name": "Baked Chicken Parmesan with Zucchini Noodles",
-    "description": "Oven-bake breaded chicken breasts topped with marinara sauce and a sprinkle of mozzarella cheese. Serve over zucchini noodles (zoodles) instead of pasta for a lower-carb option. This dish offers a healthy twist on a classic favorite."
+    "description": "Oven-bake breaded chicken breasts topped with marinara sauce and a sprinkle of mozzarella cheese. Serve over zucchini noodles (zoodles) instead of pasta for a lower-carb option. This dish offers a healthy twist on a classic favorite.",
+    "price": "$12.99"
   },
   {
     "id": 12,
     "category": "dinner",
     "image": "Images/Dinner/turkeymeatloaf.jpg",
     "name": "Turkey Meatloaf with Roasted Sweet Potatoes",
-    "description": "Prepare a meatloaf using lean ground turkey mixed with onions, bell peppers, and whole-grain breadcrumbs. Bake and serve with roasted sweet potatoes and a side salad. This meal is rich in lean protein and complex carbohydrates."
+    "description": "Prepare a meatloaf using lean ground turkey mixed with onions, bell peppers, and whole-grain breadcrumbs. Bake and serve with roasted sweet potatoes and a side salad. This meal is rich in lean protein and complex carbohydrates.",
+    "price": "$11.49"
   },
   {
     "id": 13,
     "category": "dessert",
     "image": "Images/Dessert/choclatecake.jpg",
     "name": "Chocolate Lava Cake",
-    "description": "A warm, decadent chocolate cake with a gooey molten center that oozes out when you cut into it. Often served with a scoop of vanilla ice cream or a dusting of powdered sugar."
+    "description": "A warm, decadent chocolate cake with a gooey molten center that oozes out when you cut into it. Often served with a scoop of vanilla ice cream or a dusting of powdered sugar.",
+    "price": "$6.99"
   },
   {
     "id": 14,
     "category": "dessert",
     "image": "Images/Dessert/coffeesoaked.jpg",
     "name": "Classic Tiramisu",
-    "description": "An Italian dessert featuring layers of coffee-soaked ladyfingers and a rich mixture of mascarpone cheese, eggs, and sugar. It's topped with a dusting of cocoa powder for an elegant finish."
+    "description": "An Italian dessert featuring layers of coffee-soaked ladyfingers and a rich mixture of mascarpone cheese, eggs, and sugar. It's topped with a dusting of cocoa powder for an elegant finish.",
+    "price": "7.49$"
   },
   {
     "id": 15,
     "category": "dessert",
     "image": "Images/Dessert/strawberrycake.jpg",
     "name": "Strawberry Cheesecake",
-    "description": "A creamy cheesecake with a buttery graham cracker crust, topped with fresh strawberries and a sweet strawberry glaze. It's the perfect blend of tangy and sweet flavors."
+    "description": "A creamy cheesecake with a buttery graham cracker crust, topped with fresh strawberries and a sweet strawberry glaze. It's the perfect blend of tangy and sweet flavors.",
+    "price": "$6.79"
   },
   {
     "id": 16,
     "category": "dessert",
     "image": "Images/Dessert/cremebrule.jpg",
     "name": "Crème Brûlée",
-    "description": "A silky vanilla custard topped with a layer of hard caramelized sugar. The contrast between the crisp topping and smooth custard makes it a timeless favorite."
+    "description": "A silky vanilla custard topped with a layer of hard caramelized sugar. The contrast between the crisp topping and smooth custard makes it a timeless favorite.",
+    "price": "$7.19"
   }
 ]
