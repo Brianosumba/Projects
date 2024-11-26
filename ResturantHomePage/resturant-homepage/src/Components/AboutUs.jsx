@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Styles/AboutUs.css";
+import aboutUsImage from "../Images/aboutus.jpg";
 
 const AboutUs = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -9,7 +9,7 @@ const AboutUs = () => {
   };
   return (
     <div id="about" className="about-us">
-      <img src="../Images/aboutus.jpg" alt="About us image" />
+      <img src="/Images/aboutus.jpg" alt="About us image" />
       <div className="about-content">
         <h2>About Us</h2>
         <h3>Explore the Diffrence</h3>
