@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "../Styles/Menu.css";
 
 const Menu = () => {
   const [menuItems, setMenuItems] = useState([]);
