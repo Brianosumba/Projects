@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import aboutUsImage from "../Images/aboutus.jpg";
 
 const AboutUs = () => {
   const [isExpanded, setIsExpanded] = useState(false);
