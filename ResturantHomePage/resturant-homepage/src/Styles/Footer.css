@@ -88,14 +88,6 @@ footer {
   background: radial-gradient(circle at 30% 30%, #fbc490, #e75ba5, #9b59b6);
 }
 
-.social-links a.tiktok {
-  background-color: #010101; /* TikTok black */
-}
-
-.social-links a.tiktok:hover {
-  background-color: #111111;
-}
-
 /* Icon hover effect */
 .social-links a:hover {
   transform: scale(1.1); /* Slight zoom */

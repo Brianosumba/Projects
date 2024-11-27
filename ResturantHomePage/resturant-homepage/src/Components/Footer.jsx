@@ -1,7 +1,6 @@
 import React from "react";
 import "../Styles/Footer.css";
 import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";
-import { AiFillTiktok } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -50,14 +49,6 @@ const Footer = () => {
             aria-label="Instagram"
           >
             <FaInstagram className="social-icon" />
-          </a>
-          <a
-            href="https://tiktok.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="TikTok"
-          >
-            <AiFillTiktok className="social-icon" />
           </a>
         </div>
       </div>
