@@ -1,86 +1,124 @@
 /* Menu.css */
+
+/* Overall Menu Container */
 .menu {
-  padding: 60px 20px;
-  background-color: #f8f8f8;
-  text-align: center;
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
+/* Title Styles */
 .menu h2 {
+  text-align: center;
   font-size: 2.5rem;
+  color: #333;
   margin-bottom: 20px;
-  color: #ff6347;
+  position: relative;
 }
 
+.menu h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #ff6b6b;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+/* Category Tabs */
 .menu-tabs {
-  margin-bottom: 40px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  margin-bottom: 30px;
+  gap: 10px;
 }
 
 .menu-tabs button {
+  background: none;
+  border: 2px solid #ddd;
   padding: 10px 20px;
-  border: 2px solid #ff6347;
-  background-color: transparent;
-  color: #333;
-  cursor: pointer;
-  border-radius: 5px;
   font-size: 1rem;
+  border-radius: 20px;
+  color: #555;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.menu-tabs button.active,
 .menu-tabs button:hover {
-  background-color: #ff6347;
-  color: #fff;
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+  transform: scale(1.05);
 }
 
+.menu-tabs button.active {
+  background-color: #ff6b6b;
+  color: white;
+  border-color: #ff6b6b;
+  transform: scale(1.1);
+}
+
+/* Menu Items Grid */
 .menu-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  gap: 20px;
 }
 
+/* Menu Item Card */
 .menu-item {
-  background-color: #fff;
+  background-color: white;
+  border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .menu-item:hover {
-  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
 }
 
+/* Image Styling */
 .menu-item img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
+  border-bottom: 1px solid #ddd;
 }
 
+/* Item Details */
 .menu-item h3 {
-  margin: 15px 0;
+  font-size: 1.25rem;
+  margin: 15px 10px 5px;
   color: #333;
 }
 
 .menu-item p {
-  padding: 0 15px 15px;
+  margin: 5px 10px;
   color: #666;
+  font-size: 0.9rem;
 }
 
-/* Global responsive rules */
+/* Price Highlight */
+.menu-item p:nth-child(3) {
+  font-weight: bold;
+  color: #ff6b6b;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 15px;
+  .menu-tabs button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
   }
 
-  .menu-items {
-    grid-template-columns: 1fr;
-  }
-
-  .about-us {
-    flex-direction: column;
+  .menu h2 {
+    font-size: 2rem;
   }
 }

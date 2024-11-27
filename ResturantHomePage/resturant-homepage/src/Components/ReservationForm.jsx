@@ -9,6 +9,8 @@ const ReservationForm = () => {
     time: "",
     guests: "",
   });
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -16,11 +18,40 @@ const ReservationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (
+      !formData.name ||
+      !formData.date ||
+      !formData.time ||
+      !formData.guests
+    ) {
+      setErrorMessage("Please fill in all the required fields");
+      return;
+    }
+
+    setErrorMessage("");
     console.log("Reservation Details:", formData);
+    setIsSubmitted(true);
+
+    setFormData({
+      name: "",
+      email: "",
+      date: "",
+      time: "",
+      guests: "",
+    });
+
+    setTimeout(() => setIsSubmitted(false), 3000);
   };
   return (
     <div id="reservation" className="reservation-form">
       <h2>Make a Reservation</h2>
+
+      {errorMessage && <p className="error-message">{errorMessage}</p>}
+
+      {isSubmitted && (
+        <p className="success-message">Your reservation has been made!</p>
+      )}
       <form onSubmit={handleSubmit}>
         <input
           type="text"

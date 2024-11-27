@@ -1,43 +1,80 @@
 /* Footer.css */
+
 footer {
+  background-color: #222;
+  color: white;
   padding: 20px;
-  background-color: #333;
-  color: #fff;
   text-align: center;
 }
 
-footer p {
-  margin: 10px 0;
-}
-
-footer .social-links {
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
 }
 
-footer .social-links a {
+/* Navbar Links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links ul li a {
   text-decoration: none;
-  color: #ff6347;
+  color: #bbb;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
-footer .social-links a:hover {
-  color: #fff;
+.footer-links ul li a:hover {
+  color: #ff6b6b;
 }
 
-/* Global responsive rules */
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #bbb;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff6b6b;
+}
+
+/* Copyright Text */
+footer p {
+  margin-top: 20px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  nav ul {
+  .footer-links ul {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
   }
 
-  .menu-items {
-    grid-template-columns: 1fr;
-  }
-
-  .about-us {
+  .social-links {
     flex-direction: column;
+    gap: 10px;
   }
 }
