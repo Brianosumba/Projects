@@ -1,10 +1,13 @@
 import React from "react";
 import "../Styles/Footer.css";
+import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";
+import { AiFillTiktok } from "react-icons/ai";
 
 const Footer = () => {
   return (
     <footer>
       <div className="footer-content">
+        {/* Footer Navigation Links */}
         <div className="footer-links">
           <ul>
             <li>
@@ -21,30 +24,45 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+
+        {/* Social Media Links with Icons */}
         <div className="social-links">
           <a
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Facebook"
           >
-            Facebook
+            <FaFacebookSquare className="social-icon" />
           </a>
           <a
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Twitter"
           >
-            Twitter
+            <FaTwitter className="social-icon" />
           </a>
           <a
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Instagram"
           >
-            Instagram
+            <FaInstagram className="social-icon" />
+          </a>
+          <a
+            href="https://tiktok.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok"
+          >
+            <AiFillTiktok className="social-icon" />
           </a>
         </div>
       </div>
+
+      {/* Footer Copyright */}
       <p>© 2024 Our Restaurant. All rights reserved.</p>
     </footer>
   );
