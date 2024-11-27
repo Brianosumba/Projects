@@ -1,15 +1,32 @@
+/* Reset and Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 /* Hero Section */
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
   background: url("/Images/herobanner.jpg") no-repeat center center/cover;
   color: #fff;
   text-align: center;
   padding: 20px;
   position: relative; /* Enable child positioning */
+  overflow: hidden; /* Prevent any unwanted scrollbars */
 }
 
 /* Semi-Transparent Background Overlay */
@@ -78,16 +95,72 @@
 }
 
 /* Global Responsive Rules */
+
+/* Small Screens (max-width: 768px) */
 @media (max-width: 768px) {
   .hero {
     padding: 10px; /* Adjust padding for smaller screens */
   }
 
   .hero h1 {
-    font-size: 2.5rem; /* Scale down heading */
+    font-size: 2rem; /* Scale down heading */
   }
 
   .hero p {
-    font-size: 1rem; /* Scale down paragraph */
+    font-size: 0.9rem; /* Scale down paragraph */
+  }
+
+  .hero button {
+    padding: 8px 20px; /* Reduce button size */
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem; /* Further scale down heading */
+  }
+
+  .hero p {
+    font-size: 0.8rem; /* Further scale down paragraph */
+    margin-bottom: 15px; /* Adjust spacing */
+  }
+
+  .hero button {
+    padding: 6px 15px; /* Further reduce button size */
+    font-size: 0.8rem;
+  }
+}
+
+/* Medium Screens (768px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.5rem; /* Adjust heading for medium screens */
+  }
+
+  .hero p {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
+
+  .hero button {
+    padding: 10px 25px; /* Maintain button padding */
+    font-size: 1rem;
+  }
+}
+
+/* Large Screens (1025px and above) */
+@media (min-width: 1025px) {
+  .hero h1 {
+    font-size: 4rem; /* Larger heading for big screens */
+  }
+
+  .hero p {
+    font-size: 1.5rem; /* Larger paragraph size */
+  }
+
+  .hero button {
+    padding: 15px 30px; /* Bigger button for large screens */
+    font-size: 1.2rem;
   }
 }

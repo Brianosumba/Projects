@@ -1,5 +1,3 @@
-/* Menu.css */
-
 /* Overall Menu Container */
 .menu {
   font-family: "Arial", sans-serif;
@@ -33,9 +31,10 @@
 /* Category Tabs */
 .menu-tabs {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap; /* Enable wrapping on smaller screens */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 10px; /* Space between buttons */
   margin-bottom: 30px;
-  gap: 10px;
 }
 
 .menu-tabs button {
@@ -47,6 +46,10 @@
   color: #555;
   transition: all 0.3s ease;
   cursor: pointer;
+  flex: 1 1 auto; /* Allow buttons to grow and wrap */
+  max-width: 150px; /* Limit button width for larger screens */
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .menu-tabs button:hover {
@@ -112,13 +115,33 @@
 }
 
 /* Responsive Design */
+
+/* Medium Screens (max-width: 768px) */
 @media (max-width: 768px) {
+  .menu-tabs {
+    gap: 8px; /* Reduce spacing between buttons */
+  }
+
   .menu-tabs button {
+    padding: 8px 15px; /* Adjust padding for smaller screens */
     font-size: 0.9rem;
-    padding: 8px 15px;
+    max-width: 120px; /* Limit button size further */
   }
 
   .menu h2 {
     font-size: 2rem;
+  }
+}
+
+/* Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .menu-tabs {
+    gap: 5px; /* Further reduce spacing */
+  }
+
+  .menu-tabs button {
+    padding: 6px 10px; /* Smaller padding for compact layout */
+    font-size: 0.85rem; /* Adjust font size */
+    max-width: 100px; /* Reduce button width further */
   }
 }

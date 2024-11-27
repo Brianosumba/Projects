@@ -3,6 +3,9 @@
   padding: 60px 20px;
   background-color: #fff;
   text-align: center; /* Center the "About Us" title */
+  box-sizing: border-box; /* Ensure consistent padding and width */
+  width: 100%; /* Full width of the viewport */
+  margin: 0 auto; /* Center the section horizontally */
 }
 
 .about-us h2 {
@@ -18,7 +21,9 @@
   justify-content: center;
   gap: 30px; /* More space between image and text */
   max-width: 1200px;
-  margin: 0 auto; /* Center horizontally */
+  margin: 0 auto; /* Center container horizontally */
+  flex-wrap: wrap; /* Wrap items for small screens */
+  box-sizing: border-box;
 }
 
 /* Image Styling with 3D Animation */
@@ -41,6 +46,7 @@
   flex: 2; /* Take up 2 parts of the container */
   text-align: left;
   margin-top: 30px; /* Place content slightly below the title */
+  width: 100%; /* Ensure full width on small devices */
 }
 
 .about-content h3 {
@@ -78,14 +84,18 @@
 }
 
 /* Responsive Design */
+
+/* Small Screens (max-width: 768px) */
 @media (max-width: 768px) {
   .about-us-container {
     flex-direction: column; /* Stack image and content vertically */
-    text-align: center;
+    text-align: center; /* Center everything */
+    gap: 20px; /* Adjust spacing for small devices */
   }
 
   .about-us-image {
     max-width: 80%; /* Resize for smaller screens */
+    margin: 0 auto; /* Center the image */
   }
 
   .about-content {
@@ -95,6 +105,25 @@
 
   .about-content h3,
   .about-content p {
-    text-align: center;
+    text-align: center; /* Align text to center */
+  }
+}
+
+/* Extra Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .about-us h2 {
+    font-size: 2rem; /* Adjust heading size for very small screens */
+  }
+
+  .about-content h3 {
+    font-size: 1.5rem; /* Scale down the subheading */
+  }
+
+  .about-content p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+  }
+
+  .about-us-image {
+    max-width: 100%; /* Allow the image to scale fully */
   }
 }
