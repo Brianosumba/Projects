@@ -11,9 +11,14 @@ const App = () => {
         <Link to="/">Home</Link> | <Link to="/recipes">Recipes</Link>
       </nav>
       <Routes>
+        {/* Home Route */}
         <Route path="/" element={<Home />} />
-        <Route path="recipes/" element={<Recipes />} />
-        <Route path="/recipes/:id" element={<RecipeDetails />} />
+
+        {/* Recipes Route */}
+        <Route path="recipes" element={<Recipes />} />
+
+        {/* Recipe Details Route */}
+        <Route path="recipes/:id" element={<RecipeDetails />} />
       </Routes>
     </Router>
   );
