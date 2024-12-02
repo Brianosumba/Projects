@@ -4,47 +4,48 @@ import { Link } from "react-router-dom";
 import "../styles/Recipes.css";
 
 const Recipes = () => {
-  const [recipes, setRecipes] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [filteredRecipes, setFilteredRecipes] = useState([]);
-  const [category, setCategory] = useState("chicken");
-  const [loading, setLoading] = useState(true);
+  const [recipes, setRecipes] = useState([]); // Store all fetched recipes
+  const [searchTerm, setSearchTerm] = useState(""); // User's search input
+  const [filteredRecipes, setFilteredRecipes] = useState([]); // Recipes matching the search term
+  const [category, setCategory] = useState("chicken"); // Selected category (default: chicken)
+  const [loading, setLoading] = useState(true); // Show loading state
 
   useEffect(() => {
     const getRecipes = async () => {
-      setLoading(true);
+      setLoading(true); // Indicate loading state
       try {
-        const data = await fetchRecipesByCategory(category); // Use the category state
-        setRecipes(data || []); // Fallback to an empty array
-        setFilteredRecipes(data || []);
+        const data = await fetchRecipesByCategory(category); // Fetch recipes by category
+        setRecipes(data || []); // Set recipes (fallback to empty array if no data)
+        setFilteredRecipes(data || []); // Set filtered recipes initially to all fetched recipes
       } catch (error) {
-        console.error("Error fetching recipes:", error);
-        setRecipes([]);
+        console.error("Error fetching recipes:", error); // Log errors
+        setRecipes([]); // Reset states on error
         setFilteredRecipes([]);
       } finally {
-        setLoading(false);
+        setLoading(false); // End loading state
       }
     };
 
-    getRecipes();
-  }, [category]);
+    getRecipes(); // Fetch data on component mount or category change
+  }, [category]); // Effect dependency: runs when `category` changes
 
   const handleSearch = (e) => {
-    setSearchTerm(e.target.value);
+    setSearchTerm(e.target.value); // Update search term state
   };
 
   const handleSearchClick = () => {
-    const filtered = recipes.filter((recipe) =>
-      recipe.strMeal.toLowerCase().includes(searchTerm.toLowerCase())
+    const filtered = recipes.filter(
+      (recipe) =>
+        recipe.strMeal.toLowerCase().includes(searchTerm.toLowerCase()) // Match recipes
     );
-    setFilteredRecipes(filtered);
+    setFilteredRecipes(filtered); // Update filtered recipes state
   };
 
   const handleCategoryChange = (e) => {
-    setCategory(e.target.value);
+    setCategory(e.target.value); // Update category state
   };
 
-  if (loading) return <p>Loading recipes...</p>;
+  if (loading) return <p>Loading recipes...</p>; // Show loading message
 
   return (
     <div>
