@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { fetchRecipesByCategory } from "../services/api";
 import { Link } from "react-router-dom";
+import "../styles/Recipes.css";
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
