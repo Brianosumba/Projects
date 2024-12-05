@@ -1,0 +1,97 @@
+/* Task Item Container */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #dddddd;
+  background-color: #ffffff;
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Alternate Background for Better Readability */
+li:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+/* Hover Effect */
+li:hover {
+  background-color: #e6f7ff;
+}
+
+/* Task Title */
+li span {
+  flex: 1;
+  text-align: left;
+  margin-right: 1rem;
+  color: #333333;
+  word-wrap: break-word;
+  transition: color 0.3s ease;
+}
+
+/* Completed Task Styling */
+li span.completed {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+/* Buttons Container */
+li button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Complete Button */
+li button:first-of-type {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+li button:first-of-type:hover {
+  background-color: #218838;
+}
+
+/* Edit Button */
+li button:nth-of-type(2) {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+li button:nth-of-type(2):hover {
+  background-color: #0056b3;
+}
+
+/* Delete Button */
+li button:last-of-type {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+li button:last-of-type:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.8rem;
+  }
+
+  li span {
+    margin-bottom: 0.5rem;
+  }
+
+  li button {
+    width: 100%;
+    margin: 0.3rem 0;
+  }
+}

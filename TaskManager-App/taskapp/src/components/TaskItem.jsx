@@ -1,4 +1,5 @@
 import { useTasks } from "../context/TaskContext";
+import "../styles/TaskItem.css";
 
 const TaskItem = ({ task, setEditing, setTaskToEdit }) => {
   const { deleteTask, markComplete } = useTasks();

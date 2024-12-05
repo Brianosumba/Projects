@@ -1,5 +1,6 @@
 import { useTasks } from "../context/TaskContext";
 import TaskItem from "./TaskItem";
+import "../styles/TaskList.css";
 
 import React from "react";
 

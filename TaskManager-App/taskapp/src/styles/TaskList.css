@@ -1,0 +1,67 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the Task List */
+ul {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0;
+  list-style-type: none;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Placeholder Text */
+p {
+  text-align: center;
+  font-size: 1rem;
+  color: #888888;
+  font-family: "Arial", sans-serif;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Task Items Styling */
+li {
+  padding: 1rem;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+/* Task List Responsive Design */
+@media (max-width: 768px) {
+  ul {
+    margin: 1rem;
+    padding: 0;
+  }
+
+  li {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    padding: 1.5rem;
+  }
+}

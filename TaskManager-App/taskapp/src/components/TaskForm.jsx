@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTasks } from "../context/TaskContext";
+import "../styles/TaskForm.css";
 
 const TaskForm = ({ taskToEdit, setEditing }) => {
   const { addTask, updateTask } = useTasks();
